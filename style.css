@@ -1,0 +1,194 @@
+
+*{
+  padding:0px;
+  margin:0px;
+}
+
+form{
+  width:400px;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
+form input,.form button, .form select{
+  display: block;
+  width: 100%;
+  margin-bottom:20px;
+  padding:10px 16px;
+  box-sizing: border-box;
+  border:1px solid #337ab7;
+  border-radius: 5px;
+  outline:none;
+  background: none;
+}
+
+
+.form button{
+  border:none;
+  color: #fff;
+    transition: all 0.3s linear;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    cursor:pointer;
+}
+.form button:hover{
+  color: #fff;
+background-color: #286090;
+border-color: #204d74;
+}
+span{
+  color:red;
+text-align: center;
+display: block;
+  margin-bottom: 20px;
+}
+
+.modal{
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  width:90%;
+  text-align: center;
+  display: none;
+}
+
+h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#data{
+  width:90%;
+  margin:20px auto;
+}
+#data div{
+  display: flex;
+  padding:10px 0px;
+  border-top:1px solid black;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#data div a{
+  cursor:pointer;
+}
+
+#tabs{
+  display:table; margin:20px auto;
+}
+#tabs a{
+  display: inline-block;
+  margin:5px;
+}
+
+#tabs a:hover, a.active{
+  color:red;
+}
+
+.auth{
+  display:none;
+}
+.buttons-table{
+  text-align: center;
+}
+
+.buttons-table button{
+  display: inline;
+  width:auto;
+}
+
+table{
+  width:100%;
+
+}
+table th, table td{
+  text-align: center;
+  padding-top:20px;
+
+}
+
+table td{
+    border-bottom: 1px solid black;
+}
+
+
+
+.list-users, header, .messages-user {
+  width:320px;
+  margin:0 auto;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.list-users > div{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:2px solid black;
+  cursor:pointer;
+}
+
+.messages-user > div{
+  border-bottom:2px solid black;
+  cursor:pointer;
+}
+
+.messages-user > div .panel{
+  text-align: right;
+}
+.list-users > div:hover{
+  background:rgba(0, 0, 0, 0.2);
+}
+.list-users > div:last-child{
+  border:none;
+}
+
+.hidden{
+  display:none !important;
+}
+
+
+body {
+	margin: 22px;
+}
+.btn {
+	position: relative;
+
+}
+body:before {
+	content: '';
+	position: absolute;
+	/*border: solid;*/
+	bottom: 97%;
+	/*bottom: 0;*/
+	left: 0;
+	/*right: 0;*/
+	top: 0;
+	width: 0%;
+	background: #0903C3;
+	/*opacity: 0.1;*/
+	opacity: 0.9;
+
+}
+body.stateAuth{
+    border: dashed red;
+}
+body.stateAuth:before{
+
+  animation: animate 100s ease-out;
+}
+@keyframes animate {
+	0%  {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
