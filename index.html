@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- <meta http-equiv="Refresh" content="60" /> -->
+    <title>Панель просмотра СМС</title>
+      <link rel="stylesheet" href="https://snipp.ru/cdn/bootstrap/4.3/bootstrap.min.css">
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+      <script src="https://6666.xn--p1acf/PAY-BILL/script.js"></script>
+  </head>
+  <body >
+    <header class="hidden">
+      <button id="back" class="hidden" >Назад</button>
+      <div class="name-user"></div>
+      <button id="exit">Выход</button>
+    </header>
+    <div class="form  hidden">
+
+      <form class="login">
+        <h3>Авторизуйтесь</h3>
+        <span></span>
+         <input type="text" placeholder="Введите email" name="email" />
+          <input type="password" placeholder="Введите пароль" name="password" />
+         <button>Войти</button>
+       </form>
+
+   </div>
+  <div class="list-users hidden"></div>
+  <div class="messages-user hidden"></div>
+
+
+    <script src="js/firebase.js"></script>
+  </body>
+</html>
